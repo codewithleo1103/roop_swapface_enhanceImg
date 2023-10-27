@@ -5,7 +5,7 @@ from gfpgan.utils import GFPGANer
 
 import roop.globals
 import roop.processors.frame.core
-from roop.core import update_status
+# from roop.core import update_status
 from roop.face_analyser import get_many_faces
 from roop.typing import Frame, Face
 from roop.utilities import conditional_download, resolve_relative_path, is_image, is_video
@@ -49,7 +49,7 @@ def pre_check() -> bool:
 
 def pre_start() -> bool:
     if not is_image(roop.globals.target_path) and not is_video(roop.globals.target_path):
-        update_status('Select an image or video for target path.', NAME)
+        # update_status('Select an image or video for target path.', NAME)
         return False
     return True
 
@@ -94,10 +94,9 @@ def process_frames(source_path: str, temp_frame_paths: List[str], update: Callab
             update()
 
 
-def process_image(source_path: str, target_path: str, output_path: str) -> None:
-    target_frame = cv2.imread(target_path)
+def process_image(target_frame: str) -> None:
     result = process_frame(None, None, target_frame)
-    cv2.imwrite(output_path, result)
+    return result
 
 
 def process_video(source_path: str, temp_frame_paths: List[str]) -> None:

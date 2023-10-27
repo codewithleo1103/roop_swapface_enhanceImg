@@ -78,3 +78,9 @@ Our software uses a lot of third party libraries as well pre-trained models. The
 ## Documentation
 
 Read the [documentation](https://github.com/s0md3v/roop/wiki) for a deep dive.
+
+
+## Run fastapi
+- add template face to **image_template_2**
+- run *pip3 install -r requirements.txt*
+- run *python3 FastAPI.py*

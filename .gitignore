@@ -2,3 +2,8 @@
 models
 temp
 __pycache__
+data_input
+results
+image_template
+image_template_2
+gfpgan
