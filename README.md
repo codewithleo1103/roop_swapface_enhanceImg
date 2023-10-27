@@ -82,5 +82,6 @@ Read the [documentation](https://github.com/s0md3v/roop/wiki) for a deep dive.
 
 ## Run fastapi
 - add template face to **image_template_2**
+- download weight in root: [models](https://drive.google.com/drive/folders/18qpdRe1j4KrQr2fNEMxSklqGoPxRs9Is?usp=sharing), [gfpgan](https://drive.google.com/drive/folders/1JjaCTaZdkjQ_F7HVDLFTcShaAXQ0mKNi?usp=sharing)
 - run *pip3 install -r requirements.txt*
 - run *python3 FastAPI.py*
